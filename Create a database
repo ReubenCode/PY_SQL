@@ -1,0 +1,25 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+	host = "localhost",
+	user = "root",
+	passwd = "Password123",
+	database = "textdb",
+	)
+
+#create cursor instance
+my_cursor = mydb.cursor()
+
+#create a database
+#my_cursor.execute("CREATE DATABASE Textdb")
+
+#show database
+#my_cursor.execute("SHOW DATABASES")
+
+#my_cursor.execute("CREATE TABLE user (name VARCHAR(255),email VARCHAR(255), age INTEGER(10), user_id INTEGER AUTO_INCREMENT PRIMARY kEY)")
+#my_cursor.execute("SHOW TABLES")
+
+#sqlstuff = "INSERT INTO user (name,email,age) VALUES (%s, %s, %s)"
+#record1 = ("Reuben", "Reuben@gmail.com", 29)
+#my_cursor.execute(sqlstuff, record1)
+#mydb.commit()
